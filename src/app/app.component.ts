@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActiveChangedArgs } from './favorite/favorite.component';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hello-world';
+  tweet = {
+    body: "...",
+    likesCount:10,
+    isLiked:true
+    
+  }
+  // post = {
+  //   title: "Title",
+  //   isActive:true
+  // }
+
+  // onActiveChanged(eventArgs:ActiveChangedArgs) {
+  //   console.log("active changed",eventArgs)
+  // }
 }

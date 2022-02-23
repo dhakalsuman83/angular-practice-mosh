@@ -1,0 +1,36 @@
+<!-- property binding -->
+<!-- <h2>{{title}}</h2>
+<h2 [textContent]="title"></h2>
+<img [src]="imageUrl" alt=""> -->
+
+<!-- attribute binding -->
+<!-- <img [src]="imageUrl" alt="">
+<table>
+    <tr>
+        <td [attr.colspan]="colSpan"></td>
+    </tr>
+</table> -->
+
+<!-- function binding -->
+<!-- <button class="btn btn-primary" [class.active]="isActive">Save</button> -->
+
+<!-- style binding -->
+<!-- <button [style.backgroundColor]="isActive?'blue':'white'">Save</button> -->
+
+<!-- event binding -->
+<!-- <div (click)="ondivClicked()">
+    <button (click)="onSave($event)">Save me please</button>
+</div> -->
+
+<!-- event filtering -->
+<!-- <input (keyup)="onKeyUp($event)"> -->
+<!-- <input (keyup.enter)="onKeyUp()"> -->
+
+
+<!-- template variable -->
+<!-- normally used way is target.value -->
+<!-- <input (keyup.enter)="onKeyUp($event)"> -->
+<!-- <input #name (keyup)="onKeyUp(name.value)"> -->
+
+<!-- two way binding -->
+<input [(ngModel)]="name" (keyup.enter)="onKeyUp()">
